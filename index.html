@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVanguard Solutions | Leading IT Company in Kochi, Kerala</title>
+    <meta name="description" content="TechVanguard Solutions is the premier IT Company in Kochi, offering expert Mobile App Development, Website Development, and Digital Marketing Services in India.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-blue-600 tracking-tight">TechVanguard</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="hover:text-blue-600 font-medium transition-colors">Home</a>
+                        <a href="#about" class="hover:text-blue-600 font-medium transition-colors">About</a>
+                        <a href="#services" class="hover:text-blue-600 font-medium transition-colors">Services</a>
+                        <a href="#why-us" class="hover:text-blue-600 font-medium transition-colors">Why Choose Us</a>
+                        <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg hover:bg-blue-700 transition-all font-semibold">Get a Quote</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600 p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 p-4 space-y-4">
+            <a href="#home" class="block text-lg py-2">Home</a>
+            <a href="#about" class="block text-lg py-2">About</a>
+            <a href="#services" class="block text-lg py-2">Services</a>
+            <a href="#why-us" class="block text-lg py-2">Why Choose Us</a>
+            <a href="#contact" class="block bg-blue-600 text-white text-center py-3 rounded-lg">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- 1. Homepage Hero Section -->
+    <section id="home" class="hero-gradient pt-32 pb-20 md:pt-48 md:pb-32 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="md:w-2/3">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    Leading <span class="text-blue-400">IT Company in Kochi</span>, Kerala
+                </h1>
+                <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl">
+                    TechVanguard Solutions is the premier IT hub in Kochi, providing cutting-edge technology solutions to businesses across India. 
+                    We specialize in building high-performance mobile apps, responsive websites, and data-driven digital marketing strategies 
+                    designed to scale your brand with a results-driven approach.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="toggleModal('quote-modal')" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/20">
+                        Get a Free Quote
+                    </button>
+                    <a href="#services" class="border border-slate-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all text-center">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+            <!-- Decorative element -->
+            <div class="hidden lg:block absolute -right-20 top-0 opacity-20">
+                <i class="fa-solid fa-laptop-code text-[20rem] text-blue-400 rotate-12"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="bg-blue-100 rounded-3xl w-full aspect-square relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Team working" class="object-cover w-full h-full opacity-90">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-8 rounded-2xl shadow-xl hidden sm:block">
+                        <p class="text-4xl font-bold">10+</p>
+                        <p class="text-sm font-medium">Years of Experience</p>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-blue-600 font-bold tracking-widest uppercase mb-4">About TechVanguard</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6">Expertise Driven by Passion</h3>
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        At TechVanguard Solutions, we believe that technology should be a catalyst for growth, not a hurdle. As a seasoned <strong>IT Company in Kochi</strong>, we have spent years helping businesses navigate the complexities of the digital landscape. Our journey began with a mission to provide world-class technical services to the Indian market, focusing on transparency and excellence.
+                    </p>
+                    <p class="text-slate-600 text-lg leading-relaxed">
+                        Our team consists of passionate developers, creative designers, and strategic marketers who prioritize the client’s vision above all else. Whether you are a startup looking for your first MVP or an established enterprise needing a digital overhaul, our client-focused approach ensures that every project is tailored to your specific goals. Based in the heart of Kerala, we take pride in delivering robust, scalable, and future-proof solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Services Section -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 class="text-blue-600 font-bold tracking-widest uppercase mb-4">Our Expertise</h2>
+            <h3 class="text-3xl md:text-4xl font-bold">Comprehensive Digital Services</h3>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <!-- Service A: Mobile App -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-8 text-3xl">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-6">Mobile App Development in Kochi</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    In a mobile-first world, your business needs a presence that fits in the palm of a hand. We offer premier <strong>Mobile App Development in Kochi</strong>, specializing in both Android and iOS platforms. Our process focuses heavily on intuitive UI/UX design to ensure user retention and engagement. From custom business applications to complex API integrations, our apps are built for high performance and seamless scalability. Our <strong>app development services in Kerala</strong> ensure a smooth, secure experience.
+                </p>
+            </div>
+
+            <!-- Service B: Web Dev -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-8 text-3xl">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-6">Website Development Company in Kochi</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Your website is your 24/7 storefront. As a leading <strong>Website Development Company in Kochi</strong>, we build responsive, high-converting websites that look stunning on any screen size. We don’t just code; we create SEO-friendly digital hubs that rank well and turn visitors into loyal customers. Whether you need a robust E-commerce platform or a sleek business site, our <strong>web design experts in India</strong> focus on clean code, fast loading speeds, and lead generation.
+                </p>
+            </div>
+
+            <!-- Service C: Digital Marketing -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 card-hover">
+                <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-8 text-3xl">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-6">Digital Marketing Services in Kochi</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    Visibility is the currency of the digital era. Our <strong>Digital Marketing Services in Kochi</strong> are designed to put your brand in front of the right audience. We specialize in a holistic approach including SEO, PPC, and social media marketing to ensure consistent traffic growth. Our strategies focus on high-quality lead generation and measurable ROI. Our <strong>online marketing team in Kerala</strong> helps you outpace the competition and build a community around your brand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Why Choose Us -->
+    <section id="why-us" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 rounded-[3rem] p-8 md:p-16 text-white grid lg:grid-cols-2 gap-16 items-center shadow-2xl">
+                <div>
+                    <h2 class="text-blue-400 font-bold uppercase tracking-widest mb-6">Why TechVanguard?</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-8">The Trusted Choice for Businesses in Kochi</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-blue-600/20 text-blue-400 p-2 rounded-lg"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-xl">Experienced Team</h4>
+                                <p class="text-slate-400">Our experts stay ahead of the curve with the latest tech stacks and marketing trends.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-blue-600/20 text-blue-400 p-2 rounded-lg"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-xl">Affordable Pricing</h4>
+                                <p class="text-slate-400">Enterprise-grade solutions at competitive rates suitable for Indian businesses.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-blue-600/20 text-blue-400 p-2 rounded-lg"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-xl">On-time Delivery</h4>
+                                <p class="text-slate-400">Strict project timelines without compromising the quality of the final product.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 bg-blue-600/20 text-blue-400 p-2 rounded-lg"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4 class="font-bold text-xl">Ongoing Support</h4>
+                                <p class="text-slate-400">From deployment to maintenance, we are your long-term technology partner in Kerala.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white/5 p-8 rounded-2xl text-center">
+                        <p class="text-4xl font-bold text-blue-400 mb-2">250+</p>
+                        <p class="text-slate-300">Projects Done</p>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-2xl text-center">
+                        <p class="text-4xl font-bold text-blue-400 mb-2">150+</p>
+                        <p class="text-slate-300">Clients India</p>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-2xl text-center">
+                        <p class="text-4xl font-bold text-blue-400 mb-2">98%</p>
+                        <p class="text-slate-300">Satisfaction</p>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-2xl text-center">
+                        <p class="text-4xl font-bold text-blue-400 mb-2">24/7</p>
+                        <p class="text-slate-300">Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Call to Action -->
+    <section id="contact" class="py-24 bg-blue-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-8">Ready to Transform Your Business?</h2>
+            <p class="text-xl text-blue-100 mb-12">
+                Join hands with the most trusted <strong>IT Company in Kochi</strong>. Let’s build something incredible together that sets your brand apart in the Indian market.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <button onclick="toggleModal('quote-modal')" class="bg-white text-blue-600 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-slate-100 transition-all shadow-xl">
+                    Get Started Now
+                </button>
+                <a href="tel:+910000000000" class="flex items-center justify-center gap-3 text-xl font-semibold border-b-2 border-transparent hover:border-white transition-all py-2">
+                    <i class="fa-solid fa-phone"></i> +91 000 000 0000
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <span class="text-2xl font-bold text-white mb-6 block">TechVanguard</span>
+                    <p class="mb-6">The leading IT company in Kerala providing professional digital solutions across India.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400"><i class="fa-brands fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fa-brands fa-twitter text-xl"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fa-brands fa-linkedin-in text-xl"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#why-us" class="hover:text-white transition-colors">Why Choose Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Services</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#services" class="hover:text-white transition-colors">App Development</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Digital Marketing</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">SEO Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Locate Us</h4>
+                    <p class="mb-2">123 Tech Square, MG Road</p>
+                    <p class="mb-2">Kochi, Kerala 682001</p>
+                    <p class="mb-2">India</p>
+                    <p class="mt-4">Email: contact@techvanguard.in</p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-sm">
+                &copy; 2024 TechVanguard Solutions. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div id="quote-modal" class="fixed inset-0 z-[60] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity bg-slate-900 bg-opacity-75" aria-hidden="true" onclick="toggleModal('quote-modal')"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+                <div class="px-8 py-10">
+                    <div class="flex justify-between items-center mb-8">
+                        <h3 class="text-2xl font-bold text-slate-900">Get a Free Quote</h3>
+                        <button onclick="toggleModal('quote-modal')" class="text-slate-400 hover:text-slate-600">
+                            <i class="fa-solid fa-xmark text-2xl"></i>
+                        </button>
+                    </div>
+                    <form id="quote-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Full Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Service Required</label>
+                            <select class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+                                <option>Mobile App Development</option>
+                                <option>Website Development</option>
+                                <option>Digital Marketing</option>
+                                <option>Other IT Solutions</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all" placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/20">
+                            Send Inquiry
+                        </button>
+                    </form>
+                    <div id="success-msg" class="hidden text-center py-8">
+                        <i class="fa-solid fa-circle-check text-5xl text-green-500 mb-4 block"></i>
+                        <p class="text-xl font-bold mb-2">Thank You!</p>
+                        <p class="text-slate-500">Our team will contact you within 24 hours.</p>
+                        <button onclick="toggleModal('quote-modal')" class="mt-6 text-blue-600 font-bold underline">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Mobile Menu
+        const mobileBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Toggle Modal
+        function toggleModal(id) {
+            const modal = document.getElementById(id);
+            modal.classList.toggle('hidden');
+            // Reset form if opening
+            if(!modal.classList.contains('hidden')) {
+                document.getElementById('quote-form').classList.remove('hidden');
+                document.getElementById('success-msg').classList.add('hidden');
+            }
+        }
+
+        // Form Handling
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('quote-form');
+            const msg = document.getElementById('success-msg');
+            
+            form.classList.add('hidden');
+            msg.classList.remove('hidden');
+        }
+
+        // Close menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
